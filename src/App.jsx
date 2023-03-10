@@ -6,6 +6,7 @@ import CounterOld from "./pages/CounterOld";
 import CounterUseReducer from "./pages/CounterUseReducer";
 import Home from "./pages/Home";
 import Playlist from "./pages/Playlist";
+import Car from "./pages/Car";
 const App = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/counter" element={<CounterOld />} />
         <Route path="/counterReducer" element={<CounterUseReducer />} />
         <Route path="/PlayList" element={<Playlist />} />
+        <Route path="/Car" element={<Car />} />
       </Routes>
     </>
   );

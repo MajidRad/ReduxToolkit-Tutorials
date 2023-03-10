@@ -2,6 +2,13 @@ import { configureStore } from "@reduxjs/toolkit";
 import { moviesReducer, addMovie, removeMovie } from "./slices/moviesSlice";
 import { songsReducer, addSong, removeSong } from "./slices/songsSlice";
 import { reset } from "./actions";
+import {
+  carsSliceReducer,
+  addCar,
+  removeCar,
+  changeSearchTerm,
+} from "./slices/carsSlice";
+import { formReducer, changeCost, changeName } from "./slices/formSlice";
 const store = configureStore({
   //this object determines what keys our state object has
   //this example movies the name of my key
@@ -9,10 +16,14 @@ const store = configureStore({
   reducer: {
     movies: moviesReducer,
     songs: songsReducer,
+    cars: carsSliceReducer,
+    form: formReducer,
   },
 });
 export { store };
 export { addMovie, removeMovie, addSong, removeSong };
+export { addCar, removeCar, changeSearchTerm };
+export { changeCost, changeName };
 export { reset };
 
 // const startingState = store.getState();

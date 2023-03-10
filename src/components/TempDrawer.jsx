@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import TimerIcon from "@mui/icons-material/Timer";
 import CallMadeIcon from "@mui/icons-material/CallMade";
 import AllInclusiveIcon from "@mui/icons-material/AllInclusive";
-
+import AirportShuttleIcon from "@mui/icons-material/AirportShuttle";
 
 export default function TempDrawer() {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
@@ -25,6 +25,11 @@ export default function TempDrawer() {
       text: "PlayList ReduxToolkit",
       path: "/PlayList",
       icon: AllInclusiveIcon,
+    },
+    {
+      text: "Car ReduxToolkit",
+      path: "/Car",
+      icon: AirportShuttleIcon,
     },
     { text: "reduxRtkQuery", path: "/reduxRtkQuery", icon: BuildIcon },
   ];
