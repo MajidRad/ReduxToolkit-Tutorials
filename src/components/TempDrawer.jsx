@@ -19,6 +19,7 @@ import AirportShuttleIcon from "@mui/icons-material/AirportShuttle";
 export default function TempDrawer() {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
   const navlinks = [
+    { text: "immutable", path: "/immutable", icon: TimerIcon },
     { text: "useState", path: "/counter", icon: TimerIcon },
     { text: "useReducer", path: "/counterReducer", icon: CallMadeIcon },
     {
